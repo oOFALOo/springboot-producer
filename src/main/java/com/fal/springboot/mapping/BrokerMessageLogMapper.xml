@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.fal.springboot..entity.BrokerMessageLog" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.fal.springboot.entity.BrokerMessageLog" >
     update broker_message_log
     <set >
       <if test="message != null" >
@@ -104,7 +104,7 @@
     </set>
     where message_id = #{messageId,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.fal.springboot..entity.BrokerMessageLog" >
+  <update id="updateByPrimaryKey" parameterType="com.fal.springboot.entity.BrokerMessageLog" >
     update broker_message_log
     set message = #{message,jdbcType=VARCHAR},
       try_count = #{tryCount,jdbcType=INTEGER},

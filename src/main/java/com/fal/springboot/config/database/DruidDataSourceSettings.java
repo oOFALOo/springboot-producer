@@ -56,7 +56,7 @@ public class DruidDataSourceSettings {
 	private String connectionProperties;
 
 	@Bean
-	public static PropertySourcesPlaceholderConfigurer propertyConfigurer() {
+	public static PropertySourcesPlaceholderConfigurer properdtyConfigurer() {
 		return new PropertySourcesPlaceholderConfigurer();
 	}
 
